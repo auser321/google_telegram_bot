@@ -22,8 +22,8 @@ try:
 except ModuleNotFoundError:
 	print("Required Modules Not Found")
 	exit()
-cx = "92079f4a8e99241f9"
-api_key = "AIzaSyDNWaBv47hfsdk7-tRjBGZQjMNjF2VuWSI"
+cx = "CHANGEME"
+api_key = "CHANGEME"
 
 fk_obj = fake_useragent.FakeUserAgent()
 user_agent = fk_obj.chrome
