@@ -64,8 +64,8 @@ class Google_Telegram:
 		def adminCommands(message):
 			print(message.from_user.id, message.from_user.username)
 			self.bot.delete_message(chat_id=message.chat.id, message_id=message.message_id)
-			if message.from_user.id == 5662129294:
-				self.bot.send_message(chat_id="5662129294", text=f"Mr. Admin,\n  The Bot is being Stopped via Remote "
+			if message.from_user.id == "THE_CREATOR_ID":
+				self.bot.send_message(chat_id="THE_CREATOR_ID", text=f"Mr. Admin,\n  The Bot is being Stopped via Remote "
 																 f"Messaging.\n If Needed plese turn me ON.\n Details : \n Group Name : {message.chat.title}\n"
 																 f"Group ID : {message.chat.id}")
 				# Delete the Message
@@ -242,8 +242,6 @@ try:
 	if __name__ == "__main__":
 		startup()
 		g1 = Google_Telegram(API_KEY)
-		# g1.bot.set_my_short_description(short_description=r"Google-Search 🤖 ")
-		# g1.bot.set_my_description("This Bot is Still Under-Development!")
 		g1.bot.infinity_polling(long_polling_timeout=15)
 
 
